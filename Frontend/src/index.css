@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark body {
+    @apply bg-darkBg text-darkText;
+  }
+
+  .dark .card {
+    @apply bg-darkCard text-darkText;
+  }
+
+  .dark .sidebar {
+    @apply bg-darkCard text-darkText;
+  }
+
+  .dark .settings-container {
+    @apply bg-darkBg text-darkText;
+  }
+}
