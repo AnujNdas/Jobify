@@ -50,11 +50,7 @@ export default function Landing() {
           transition={{ duration: 0.5 }}
         >
           <Card
-            className={`p-4 shadow-xl rounded-2xl ${
-              isDarkMode
-                ? "bg-darkCard"
-                : "bg-gradient-to-r from-purple-500 to-purple-700"
-            } text-white`}
+            className="p-4 shadow-xl rounded-2x1 bg-gradient-to-r from-purple-500 to-purple-700 text-white"
           >
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Job Statistics</h2>
@@ -74,11 +70,7 @@ export default function Landing() {
           transition={{ duration: 0.5 }}
         >
           <Card
-            className={`p-4 shadow-lg rounded-2xl ${
-              isDarkMode
-                ? "bg-darkCard"
-                : "bg-gradient-to-r from-purple-400 to-purple-500"
-            } text-white`}
+            className="p-4 shadow-lg rounded-2xl bg-gradient-to-r from-purple-500 to-purple-700 text-white"
           >
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Active Applications</h2>
@@ -97,11 +89,7 @@ export default function Landing() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className={`p-4 shadow-lg ${
-              isDarkMode
-                ? "bg-darkCard"
-                : "bg-gradient-to-r from-purple-400 to-purple-500"
-            } text-white`}>
+          <Card className="p-4 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Pending Messages</h2>
               <div className="text-center">
@@ -119,11 +107,7 @@ export default function Landing() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className={`p-4 shadow-lg ${
-              isDarkMode
-                ? "bg-darkCard"
-                : "bg-gradient-to-r from-purple-400 to-purple-500"
-            } text-white`}>
+          <Card className="p-4 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Performance Overview</h2>
               <div className="text-center">

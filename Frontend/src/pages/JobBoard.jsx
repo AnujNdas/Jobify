@@ -22,7 +22,27 @@ const jobs = [
     salary: "8.2 - 13.5k PLN",
     posted: "2 days ago",
     logo: "https://via.placeholder.com/40"
-  }
+  },
+  {
+    id: 2,
+    title: "Product Designer",
+    company: "Twitch",
+    location: "Wroclaw",
+    tags: ["Remote"],
+    salary: "8.2 - 13.5k PLN",
+    posted: "2 days ago",
+    logo: "https://via.placeholder.com/40"
+  },
+  {
+    id: 2,
+    title: "Product Designer",
+    company: "Twitch",
+    location: "Wroclaw",
+    tags: ["Remote"],
+    salary: "8.2 - 13.5k PLN",
+    posted: "2 days ago",
+    logo: "https://via.placeholder.com/40"
+  },
 ];
 
 export default function JobBoard() {

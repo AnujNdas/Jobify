@@ -12,7 +12,7 @@ export default function JobFilter({ onFilterChange }) {
   };
 
   return (
-    <div className="flex space-x-4 mb-4 bg-white p-4 rounded-lg shadow-md">
+    <div className="flex space-x-4 mb-4 bg-transparent p-4 rounded-lg shadow-md">
       <div className="relative w-1/3">
         <FaSearch className="absolute left-3 top-3 text-gray-500" />
         <input
