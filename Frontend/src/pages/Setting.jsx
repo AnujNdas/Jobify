@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { FaUser, FaLock, FaBell, FaCogs, FaPalette } from "react-icons/fa";
+import { useTheme } from "../context/ThemeContext"; // Ensure dark mode applies correctly
 
 export default function Settings() {
+  const {isDarkMode} = useTheme()
   const [activeTab, setActiveTab] = useState("profile");
 
   const tabs = [
@@ -13,7 +15,7 @@ export default function Settings() {
   ];
 
   return (
-    <div className="p-6 bg-white shadow-lg rounded-2xl max-w-3xl mx-auto mt-10">
+    <div className={`p-6 ${isDarkMode ? "bg-darkBg text-darkText" : "bg-white text-black"} shadow-lg rounded-2xl mx-auto mt-10`}>
       {/* Search Bar */}
       <div className="mb-4">
         <input

@@ -11,7 +11,7 @@ export default function Sidebar() {
   const menuItems = [
     { name: "Dashboard", path: "/", icon: <FaHome /> },
     { name: "Job Board", path: "/jobs", icon: <FaClipboardList /> },
-    { name: "Messenger", path: "/messenger", icon: <FaComments /> },
+    { name: "Messenger", path: "/messages", icon: <FaComments /> },
     { name: "Settings", path: "/settings", icon: <FaCog /> }
   ];
 
