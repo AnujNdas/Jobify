@@ -9,7 +9,7 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: '/Jobify/', // Correct base path for Render deployment
+  base: '/', // Correct base path for Render deployment
   build: {
     outDir: 'dist',  // Ensure the build output goes to the correct folder
     assetsDir: 'assets',  // Ensures assets like CSS and JS are correctly placed
