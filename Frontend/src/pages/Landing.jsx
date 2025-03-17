@@ -10,7 +10,8 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext"; // Ensure dark mode applies correctly
-
+import NotificationIcon from "../components/Notification";
+import ProfileIcon from "../components/Profile";
 export default function Landing() {
   const { isDarkMode } = useTheme();
 
@@ -36,8 +37,8 @@ export default function Landing() {
               className="bg-transparent outline-none w-full"
             />
           </div>
-          <FaBell className="text-3xl text-purple-500 cursor-pointer" />
-          <FaUserCircle className="text-4xl text-purple-500" />
+          <NotificationIcon/>
+          <ProfileIcon/>
         </div>
       </div>
 

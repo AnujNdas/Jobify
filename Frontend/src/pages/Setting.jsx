@@ -36,7 +36,7 @@ export default function Settings() {
                 ? "bg-purple-500 text-white"
                 : "bg-gray-200 text-gray-700"
             }`}
-          >
+          > 
             {tab.icon} {tab.name}
           </button>
         ))}
