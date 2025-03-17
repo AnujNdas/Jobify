@@ -13,7 +13,6 @@
     "deploy": "node --max-old-space-size=4096 ./node_modules/gh-pages/bin/gh-pages.js -d dist"
   },
   "dependencies": {
-    "@emoji-mart/react": "^1.1.1",
     "framer-motion": "^12.4.11",
     "lucide-react": "^0.482.0",
     "react": "^19.0.0",
