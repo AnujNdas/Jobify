@@ -30,7 +30,7 @@ const ProfileIcon = () => {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                className={`absolute right-0 mt-2 w-48 ${isDarkMode ? "bg-darkCard" : "bg-white"} shadow-lg rounded-lg p-3`}
+                className={`absolute right-0 mt-2 w-48 ${isDarkMode ? "bg-darkCard text-purple-500" : "bg-white"} shadow-lg rounded-lg p-3`}
                 >
                     <ul className="space-y-2">
                         <li className={`flex items-center gap-2 p-2 cursor-pointer rounded-md ${isDarkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"}`}>

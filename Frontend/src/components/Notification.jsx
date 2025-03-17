@@ -18,7 +18,7 @@ const NotificationIcon = () => {
             setNotifications(prev => [newNotification, ...prev]);
             setUnreadCount(prev => prev + 1);
             playNotificationSound();
-        }, 10000); // Simulating real-time updates every 10 sec
+        }, 100000); // Simulating real-time updates every 10 sec
 
         return () => clearInterval(interval);
     }, []);
