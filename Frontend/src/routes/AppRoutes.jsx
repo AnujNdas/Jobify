@@ -4,6 +4,7 @@ import JobBoard from "../pages/JobBoard";
 import Sidebar from "../components/Sidebar";
 import Settings from "../pages/Setting";
 import Messenger from "../pages/Messenger";
+import { PostJob,SaveListings } from "../pages/Quickaction";
 import { CompanyLogin, IndividualLogin,  } from "../pages/Logins";
 import {CompanySignup, IndividualSignup} from "../pages/Signups"
 function AppRoutes() {
@@ -32,6 +33,8 @@ function AppRoutes() {
           <Route path="/individual-login" element={<IndividualLogin />} />
           <Route path="/company-signup" element={<CompanySignup />} />
           <Route path="/individual-signup" element={<IndividualSignup />} />
+          <Route path="/post-job" element={<PostJob />} />
+          <Route path="/save-listings" element={<SaveListings />} />
         </Routes>
       </div>
     </div>
