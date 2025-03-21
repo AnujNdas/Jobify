@@ -1,7 +1,7 @@
 import { useState } from "react";
 import JobCard from "../components/Job-card";
 import JobFilter from "../components/JobFilter";
-
+import { useTheme } from "../context/ThemeContext";
 const jobs = [
   {
     id: 1,
@@ -11,7 +11,8 @@ const jobs = [
     tags: ["Remote", "Sketch"],
     salary: "8.8 - 13.7k PLN",
     posted: "2 days ago",
-    logo: "https://via.placeholder.com/40"
+    logo: "https://via.placeholder.com/40",
+    status : 0
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const jobs = [
     tags: ["Remote"],
     salary: "8.2 - 13.5k PLN",
     posted: "2 days ago",
-    logo: "https://via.placeholder.com/40"
+    logo: "https://via.placeholder.com/40",
+    status : 1
   },
   {
     id: 2,
@@ -31,7 +33,8 @@ const jobs = [
     tags: ["Remote"],
     salary: "8.2 - 13.5k PLN",
     posted: "2 days ago",
-    logo: "https://via.placeholder.com/40"
+    logo: "https://via.placeholder.com/40",
+    status : 2
   },
   {
     id: 2,
@@ -41,11 +44,13 @@ const jobs = [
     tags: ["Remote"],
     salary: "8.2 - 13.5k PLN",
     posted: "2 days ago",
-    logo: "https://via.placeholder.com/40"
+    logo: "https://via.placeholder.com/40",
+    status : 3
   },
 ];
 
 export default function JobBoard() {
+  const {isDarkMode} = useTheme();
   const [filteredJobs, setFilteredJobs] = useState(jobs);
 
   const handleFilterChange = (filters) => {
@@ -61,7 +66,7 @@ export default function JobBoard() {
   };
 
   return (
-    <div className="p-6 w-full">
+    <div className={`p-6 w-full ${isDarkMode ? "bg-darkCard" : "bg-white"}`}>
       <h1 className="text-2xl font-bold mb-4">Job Board</h1>
       <JobFilter onFilterChange={handleFilterChange} />
       <div className="space-y-4">

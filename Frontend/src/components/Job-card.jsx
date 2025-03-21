@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import ProgressTracker from "./Progresstracker";
 export default function JobCard({ job }) {
   const navigate = useNavigate();
 
@@ -23,7 +23,10 @@ export default function JobCard({ job }) {
           ))}
         </div>
       </div>
-
+          {/* Progress Tracker */}
+    <div className="mt-3">
+        <ProgressTracker currentStep={job.status} />
+    </div>
       {/* Job Details */}
       <div className="text-right">
         <p className="font-bold">{job.salary}</p>

@@ -15,7 +15,7 @@ export default function Settings() {
   ];
 
   return (
-    <div className={`p-6 ${isDarkMode ? "bg-darkBg text-darkText" : "bg-white text-black"} shadow-lg rounded-2xl mx-auto mt-10`}>
+    <div className={`p-6 ${isDarkMode ? "bg-darkCard text-darkText" : "bg-white text-black"} shadow-lg rounded-2xl mx-auto mt-10`}>
       {/* Search Bar */}
       <div className="mb-4">
         <input

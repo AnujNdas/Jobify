@@ -18,7 +18,7 @@ export default function Landing() {
   return (
     <div
       className={`p-6 ${
-        isDarkMode ? "bg-darkBg text-darkText" : "bg-white text-black"
+        isDarkMode ? "bg-darkCard text-darkText" : "bg-white text-black"
       }`}
     >
       {/* Header Section */}
@@ -28,7 +28,7 @@ export default function Landing() {
           <div
             className={`flex items-center ${
               isDarkMode ? "bg-gray-700" : "bg-gray-200"
-            } p-2 rounded-lg`}
+            } p-1 rounded-lg`}
           >
             <FaSearch className="text-gray-500 mr-2" />
             <input
@@ -43,7 +43,7 @@ export default function Landing() {
       </div>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
         {/* Job Statistics */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -51,7 +51,7 @@ export default function Landing() {
           transition={{ duration: 0.5 }}
         >
           <Card
-            className="p-4 shadow-xl rounded-2x1 bg-gradient-to-r from-purple-500 to-purple-700 text-white"
+            className="p-1 shadow-xl rounded-2x1 bg-gradient-to-r from-purple-500 to-purple-700 text-white"
           >
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Job Statistics</h2>
@@ -71,7 +71,7 @@ export default function Landing() {
           transition={{ duration: 0.5 }}
         >
           <Card
-            className="p-4 shadow-lg rounded-2xl bg-gradient-to-r from-purple-500 to-purple-700 text-white"
+            className="p-1 shadow-lg rounded-2xl bg-gradient-to-r from-purple-500 to-purple-700 text-white"
           >
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Active Applications</h2>
@@ -90,7 +90,7 @@ export default function Landing() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="p-4 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
+          <Card className="p-1 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Pending Messages</h2>
               <div className="text-center">
@@ -108,7 +108,7 @@ export default function Landing() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="p-4 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
+          <Card className="p-1 shadow-lg bg-gradient-to-r from-purple-500 to-purple-700 text-white">
             <CardContent>
               <h2 className="text-2xl font-bold mb-4">Performance Overview</h2>
               <div className="text-center">

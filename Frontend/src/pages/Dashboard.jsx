@@ -1,15 +1,16 @@
-import Sidebar from "../components/Sidebar";
-import JobBoard from "./JobBoard";
+
 import Landing from "./Landing";
+import RecommendedJobs from "../components/Ui/Recommendation";
 
 export default function Dashboard() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-full">
       {/* Sidebar */}
       
       {/* Main Content */}
-      <div className="flex-1 p-6 bg-gray-50">
+      <div className="flex-1 relative">
         <Landing/>
+        <RecommendedJobs/>
       </div>
     </div>
   );
