@@ -9,10 +9,16 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: '/', // Correct base path for Render deployment
+  base: '/', // Ensures proper routing
   build: {
-    outDir: 'dist',  // Ensure the build output goes to the correct folder
-    assetsDir: 'assets',  // Ensures assets like CSS and JS are correctly placed
+    outDir: 'dist',
+    assetsDir: 'assets',
   },
+  server: {
+    historyApiFallback: true, // 🔥 Fixes route issues on Render
+  },
+  preview: {
+    historyApiFallback: true, // Ensures preview mode also works
+  }
 })
 
