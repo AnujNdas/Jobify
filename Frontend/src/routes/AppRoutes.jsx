@@ -24,6 +24,8 @@ function AppRoutes() {
   ];
 
   const isAdminRoute = location.pathname.startsWith("/admin");
+  console.log("Current Path:", location.pathname);
+  console.log("Is Admin Route:", isAdminRoute);
 
   return (
     <div className="flex">
